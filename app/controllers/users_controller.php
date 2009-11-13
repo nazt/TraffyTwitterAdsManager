@@ -19,7 +19,7 @@ class UsersController extends AppController
 			{
 				$this->Session->write('User', $user);
 				$this->Session->setFlash('You\'ve successfully logged in.');
-				$this->redirect('index');
+				$this->redirect('/messages');
 				exit();
 			}
 			else
