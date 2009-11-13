@@ -41,20 +41,19 @@ class AppController extends Controller {
      
 
     function beforeFilter() { 
-
-        if ($this->params['admin'] == true) { 
-
-            if($this->Session->check('User') == false) { 
-
-                $this->redirect('/login'); 
-
-                $this->Session->setFlash('The URL you\'ve followed requires you login.'); 
-
-            } 
-
-            $this->layout = 'admin'; 
-
-        } 
+        // if (@$this->params['admin'] == true) { 
+        // 
+        //     if($this->Session->check('User') == false) { 
+        // 
+        //         $this->redirect('/login'); 
+        // 
+        //         $this->Session->setFlash('The URL you\'ve followed requires you login.'); 
+        // 
+        //     } 
+        // 
+        //     $this->layout = 'admin'; 
+        // 
+        // } 
 
     } 
 
