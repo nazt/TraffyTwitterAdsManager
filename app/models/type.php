@@ -3,5 +3,6 @@
     {
         var $name = 'Type';
         var $displayField = 'type';
+		var $hasMany = 'Message'; 
     }
 ?>
