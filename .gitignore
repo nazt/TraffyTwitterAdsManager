@@ -1,3 +1,2 @@
 .DS_STORE
-app/tmp
-/app/tmp
+app/tmp/
