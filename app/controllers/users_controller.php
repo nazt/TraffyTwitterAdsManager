@@ -9,10 +9,7 @@ class UsersController extends AppController
 		
 	}
 	
-	function beforeFilter()
-	{
-		$this->__validateLoginStatus();
-	}
+
 	
 	function login()
 	{
@@ -39,9 +36,15 @@ class UsersController extends AppController
 		$this->Session->setFlash('You\'ve successfully logged out.');
 		$this->redirect('login');
 	}
-		
+	function beforeFilter()
+	{
+		$this->__validateLoginStatus();
+	}	
 	function __validateLoginStatus()
 	{
+		// echo "hey";  
+		// echo $this->action;
+		// exit(0);
 		if($this->action != 'login' && $this->action != 'logout')
 		{
 			if($this->Session->check('User') == false)

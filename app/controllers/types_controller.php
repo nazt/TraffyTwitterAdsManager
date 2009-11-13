@@ -1,7 +1,7 @@
 <?php
-class TeamsController extends AppController
+class TypesController extends AppController
 {
- 	var $name='Teams';
+ 	var $name='Types';
 	var $scaffold;
 	function beforeFilter()
 	{

@@ -8,6 +8,7 @@ class DATABASE_CONFIG {
 		'login' => 'root',
 		'password' => '',
 		'database' => 'cake',
+		'prefix'      => 'twitter_',
 	);
 }
 ?>
