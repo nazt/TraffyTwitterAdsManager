@@ -51,7 +51,12 @@
 
 		</div>
 		<div id="footer">
- 
+ 			            <?php echo $html->link(
+			                   $html->image('cake.power.gif', array('alt'=> __("CakePHP: the rapid development php framework", true), 'border'=>"0")),
+			                   '',
+			                  array('target'=>'_blank'), null, false
+			              );
+			         ?>
 		</div>
 	</div>
 	<?php echo $cakeDebug; ?>
