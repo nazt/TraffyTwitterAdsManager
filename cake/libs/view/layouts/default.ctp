@@ -41,7 +41,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $html->link(__('CakePHP: the rapid development php framework', true), 'http://cakephp.org'); ?></h1>
+			<h1>NAzT</h1>
 		</div>
 		<div id="content">
 
@@ -51,12 +51,7 @@
 
 		</div>
 		<div id="footer">
-			<?php echo $html->link(
-					$html->image('cake.power.gif', array('alt'=> __("CakePHP: the rapid development php framework", true), 'border'=>"0")),
-					'http://www.cakephp.org/',
-					array('target'=>'_blank'), null, false
-				);
-			?>
+ 
 		</div>
 	</div>
 	<?php echo $cakeDebug; ?>

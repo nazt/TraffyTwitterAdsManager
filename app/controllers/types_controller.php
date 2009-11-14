@@ -13,8 +13,9 @@ class TypesController extends AppController
 		{
 			if($this->Session->check('User') == false)
 			{
-				$this->redirect('/users/login');
 				$this->Session->setFlash('The URL you\'ve followed requires you login.');
+				$this->redirect('/users/login');
+				
 			}
 		}
 	}
